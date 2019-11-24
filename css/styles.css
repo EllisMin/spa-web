@@ -118,11 +118,12 @@ p {
   top: 0;
   position: sticky;
   z-index: 1;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 #nav-bar ul {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 
 #nav-bar ul li a {
@@ -153,7 +154,7 @@ p {
 
   /* Black screen Overlay */
   position: absolute;
-  top: 60px;
+  top: 56.5px;
   left: 0;
   right: 0;
   bottom: 0;
