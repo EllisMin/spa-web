@@ -25,6 +25,7 @@ p {
   padding: 0 2rem;
   overflow: hidden;
 }
+
 .text-center {
   text-align: center;
 }
@@ -213,7 +214,7 @@ p {
 }
 
 #contact .contact-form,
-#contact #map {
+#contact #map-container {
   flex: 1;
 }
 #contact .contact-form .form-group {
@@ -231,14 +232,12 @@ p {
 /* Zoom in button*/
 #zoom-btn {
   position: absolute;
-  right: 10%;
-  margin: 20px auto;
+  right: 40%;
+  margin: 1rem auto;
   width: 20%;
-  height: 40px;
-  padding: 10px;
+  height: 2.5rem;
   border: none;
   border-radius: 5px;
-  font-size: 12px;
   text-align: center;
   color: #fff;
   background: #66cdaa;

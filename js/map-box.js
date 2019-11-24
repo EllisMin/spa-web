@@ -3,9 +3,9 @@ const loc = [-89.395164, 43.073394]; //rk
 mapboxgl.accessToken =
   "pk.eyJ1IjoiY29jb29uNDYxMyIsImEiOiJjazNjY3MxdWkwajNoM2hxaXFpMWVvd3dxIn0.xjONCxuZnuVionvYzOArVQ";
 var map = new mapboxgl.Map({
-  container: "map",
-  //   style: "mapbox://styles/mapbox/streets-v11",
-  style: "mapbox://styles/mapbox/dark-v10",
+  container: "map-container",
+    style: "mapbox://styles/mapbox/streets-v11",
+  // style: "mapbox://styles/mapbox/dark-v10",
   center: loc,
   zoom: 15
   //   pitch: 40,

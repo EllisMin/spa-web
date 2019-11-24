@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Style sheets -->
+    <!-- Style sheets; make sure to have main style sheet above media sheets -->
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
@@ -75,27 +75,33 @@
         <div class="items">
           <div class="item">
             <i class="fas fa-university fa-2x"></i>
-            <h3>Investment Banking</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-              magnam.
-            </p>
+            <div>
+              <h3>Investment Banking</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti, magnam.
+              </p>
+            </div>
           </div>
           <div class="item">
             <i class="fas fa-book-reader fa-2x"></i>
-            <h3>Tax & Custodial</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-              magnam.
-            </p>
+            <div>
+              <h3>Tax & Custodial</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti, magnam.
+              </p>
+            </div>
           </div>
           <div class="item">
             <i class="fas fa-pencil-alt fa-2x"></i>
-            <h3>Portfolio Management</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-              magnam.
-            </p>
+            <div>
+              <h3>Portfolio Management</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti, magnam.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -178,13 +184,12 @@
           <input type="submit" value="Send" class="btn btn-dark" />
         </form>
       </div>
-      <div id="map"></div>
-      <button id="zoom-btn">Zoom in!</button>
-
-      <!-- emmet: script:src -->
-      <script src="./js/map-box.js"></script>
-
-      <script></script>
+      <div id="map-container">
+        <div id="map"></div>
+        <button id="zoom-btn">Zoom in!</button>
+        <!-- emmet: script:src -->
+        <script src="./js/map-box.js"></script>
+      </div>
     </section>
     <!-- Footer -->
     <footer id="main-footer" class="bg-dark text-center py-1">
