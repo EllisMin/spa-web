@@ -19,11 +19,35 @@ p {
   margin: 0.75rem 0;
 }
 /* Utility Classes */
-.text-primary {
-  color: salmon;
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
 }
+.text-center {
+  text-align: center;
+}
+.text-primary {
+  color: #fd8474;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
 .l-heading {
   font-size: 3rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+.m-heading {
+  font-size: 2rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
 }
@@ -33,10 +57,28 @@ p {
   margin-bottom: 2rem;
 }
 
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
 .btn {
   display: inline-block;
   color: #fff;
-  background-color: salmon;
+  background-color: #fd8474;
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
@@ -48,6 +90,15 @@ p {
 }
 .btn:hover {
   opacity: 1;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
 }
 
 /* Navbar */
@@ -75,7 +126,7 @@ p {
   margin: 0 0.25rem;
 }
 #nav-bar ul li a:hover {
-  background: salmon;
+  background: #fd8474;
   border-radius: 5px;
 }
 
@@ -97,7 +148,55 @@ p {
 
   /* Black screen Overlay */
   position: absolute;
-  top: 60;
+  top: 60px;
   left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Section: what we do */
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background-color: #fd8474;
+  opacity: 0.9;
+  border-radius: 30%;
+  padding: 1rem;
+  margin-bottom: 0.7rem;
+}
+#what .items .item i:hover {
+  opacity: 0.8;
+}
+
+/* Section: who we are */
+#who {
+  display: flex;
+}
+.who-img {
+  flex: 1;
+  background: #333 url("../img/people.jpg") center center/cover;
+}
+.who-text {
+  flex: 1;
+  line-height: 1.3;
+}
+
+/* Section: clients */
+#clients .items {
+  display: flex;
+}
+#clients .items img {
+  display: block;
+  width: 60%;
+  margin: auto;
 }
