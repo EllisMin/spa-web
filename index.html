@@ -26,6 +26,13 @@
     <title>Badger CPA Firm | Accounting & Consulting</title>
     <meta name="description" content="Welcome to our company" />
     <meta name="keywords" content="accounting, cpa, consulting" />
+
+    <!-- Mapbox API -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
   </head>
   <body id="home">
     <!-- Navbar -->
@@ -124,13 +131,61 @@
           <span class="text-primary">Our</span> Clients
         </h2>
         <div class="items py-1">
-            <div><img src="./img/logos/logo1.png" alt="client1"></div>
-            <div><img src="./img/logos/logo2.png" alt="client2"></div>
-            <div><img src="./img/logos/logo3.png" alt="client3"></div>
-            <div><img src="./img/logos/logo4.png" alt="client4"></div>
-            <div><img src="./img/logos/logo5.png" alt="client5"></div>
+          <div><img src="./img/logos/logo1.png" alt="client1" /></div>
+          <div><img src="./img/logos/logo2.png" alt="client2" /></div>
+          <div><img src="./img/logos/logo3.png" alt="client3" /></div>
+          <div><img src="./img/logos/logo4.png" alt="client4" /></div>
+          <div><img src="./img/logos/logo5.png" alt="client5" /></div>
         </div>
       </div>
+    </section>
+
+    <!-- Section: Contact -->
+    <section id="contact">
+      <div class="contact-form p-2 bg-primary">
+        <h2 class="m-heading">Contact Us</h2>
+        <p>Please use the form below to contact us</p>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Enter Phone Number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter Message"
+            ></textarea>
+          </div>
+          <input type="submit" value="Send" class="btn btn-dark" />
+        </form>
+      </div>
+      <div id="map"></div>
+      <button id="zoom-btn">Zoom in!</button>
+
+      <!-- emmet: script:src -->
+      <script src="./js/main.js"></script>
+
+      <script></script>
     </section>
   </body>
 </html>
