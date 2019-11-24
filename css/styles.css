@@ -217,6 +217,12 @@ p {
 #contact #map-container {
   flex: 1;
 }
+#map-container {
+  display: flex;
+}
+#map-container #map {
+    width: 100%;
+}
 #contact .contact-form .form-group {
   margin: 0.75rem;
 }
@@ -232,7 +238,7 @@ p {
 /* Zoom in button*/
 #zoom-btn {
   position: absolute;
-  right: 40%;
+  right: 10%;
   margin: 1rem auto;
   width: 20%;
   height: 2.5rem;

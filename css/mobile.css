@@ -67,12 +67,12 @@
   /* Need to add height for map since aligning vertically */
   #map {
     height: 300px;
-    border-top: 3.5px solid #333;
+    border-top: 4px solid #444;
   }
 
   #zoom-btn {
     position: absolute;
     /* Todo: fix */
-    top: 5%;
+    bottom: 5;
   }
 }
